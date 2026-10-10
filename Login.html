@@ -1,0 +1,40 @@
+<!-- Question: Create a webpage that mimics a login screen for a website.
+ The user enters their email address and password. Apply style and formatting as shown 
+ in the following example. Note that when the user types a password, it must not be displayed.
+ 
+ The webpage should mimic a succesful login.
+
+ When the user clicks the Log in button, both input boxes are cleared of text 
+ (set to a string of length 0).An alert box then appears displaying "Login successful".
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <title>Login page</title>
+    
+    <img src="Login.jpg" alt="" class="logo">
+
+</head>
+<body>
+    <br>
+    <input id="emailln" placeholder="Enter email here" class="logindetails">
+    <br>
+    <input type="password"  id="passwordln" placeholder="Enter password here" class="logindetails">
+    <br>
+    <button onclick="login() + cleardata()" class="loginbutton">Log in</button>
+    <script>
+        function login(){
+            var email = document.getElementById("emailln").value;
+            var password= document.getElementById("passwordln").value;
+            alert("Login Successful");
+        }
+        function cleardata(){
+            document.getElementById("emailln").value = "";
+            document.getElementById("passwordln").value = "";
+        }
+    </script>
+</body>
+</html> 
