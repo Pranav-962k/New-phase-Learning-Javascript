@@ -1,0 +1,27 @@
+ 
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <button onclick="display()">Click me</button>
+    <button onclick="deletedata()">Clear</button>
+    <input id="nameln">
+    <input id="ageln">
+    <script>
+    function display(){
+        var name=document.getElementById("nameln").value;
+        var age=document.getElementById("ageln").value;
+        alert("Hi " + name + " you are " + age);
+    }
+    function deletedata(){
+        document.getElementById("nameln").value = "";
+        document.getElementById("ageln").value = "";
+    }
+        </script>
+ </body>
+ </html>
