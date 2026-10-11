@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" placeholder="Enter temperature" id="temp">
+    <br><br>
+
+    <button onclick="tofarln() ">Celcius to Farhenheit</button>
+    <button onclick="tocelln() ">Farhenheit to Celcius</button>
+    <br><br>
+
+    <h4>
+        ANS: <span id="answer">---</span>
+    </h4>
+
+    <!-- (Celcius x 2) + 30-->
+    <!-- (5/9) x (f - 32)-->
+    <script>
+
+        function tofarln() {
+            var cel = document.getElementById("temp").value;
+            parseFloat(cel);
+            var farformula = (cel * 9 / 5) + 32;
+            document.getElementById("answer").innerHTML = farformula;
+        }
+
+        function tocelln() {
+            var far = document.getElementById("temp").value;
+            parseFloat(far);
+            var celformula = (5 / 9) * (far - 32);
+            document.getElementById("answer").innerHTML = celformula;
+        }
+
+      
+
+
+
+    </script>
+</body>
+
+</html>

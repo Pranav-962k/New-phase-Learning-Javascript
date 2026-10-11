@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Height:</label> 
+    <input id="Heightln">
+    <br>
+    <br>
+    <label for="">Radius:</label>
+    <input type="text" name="" id="Radiusln">
+    <br>
+    <br>
+    <button onclick="Volume() + cleardata()">Calculate</button>
+
+    <script>
+        function Volume(){
+            var height = document.getElementById("Heightln").value;
+            var radius = document.getElementById("Radiusln").value;
+
+            parseFloat(height);
+            parseFloat(radius);
+
+            var volume = (3.14) * (radius ** 2) 
+            alert(volume)
+        }
+        function cleardata(){
+            document.getElementById("Heightln").value = "";
+            document.getElementById("Radiusln").value = "";
+        }
+    </script>
+</body>
+</html>
