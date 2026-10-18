@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="numone">
+    <input type="number" id="numtwo">
+    <br><br>
+    <button onclick="addln()">+</button>
+    <button onclick="subln()">-</button>
+    <button onclick="multiplyln()">x</button>
+    <button onclick="divisionln()">÷</button>
+    <h4 id="answer">Ans: <span id="final">---</span></h4>
+    <script>
+        let num1 = parseFloat(document.getElementById("numone").value);
+        let num2 = parseFloat(document.getElementById("numtwo").value);
+        function addln(){
+            let num1 = parseFloat(document.getElementById("numone").value);
+            let num2 = parseFloat(document.getElementById("numtwo").value);
+            var add = num1 + num2
+            document.getElementById("final").innerHTML = add;
+        }
+         function subln(){
+            let num1 = parseFloat(document.getElementById("numone").value);
+            let num2 = parseFloat(document.getElementById("numtwo").value);
+            var sub = num1 - num2
+            document.getElementById("final").innerHTML = sub;
+        }
+         function multiplyln(){
+            let num1 = parseFloat(document.getElementById("numone").value);
+            let num2 = parseFloat(document.getElementById("numtwo").value);
+            var multiply = num1 * num2
+            document.getElementById("final").innerHTML = multiply;
+        }
+         function divisionln(){
+            let num1 = parseFloat(document.getElementById("numone").value);
+            let num2 = parseFloat(document.getElementById("numtwo").value);
+            var division = num1 / num2
+            document.getElementById("final").innerHTML = division;
+        }
+    </script>
+</body>
+</html>
