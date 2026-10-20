@@ -1,0 +1,28 @@
+<h3>
+    Provisional licence eligibility check
+</h3>
+<input id="nameln" placeholder="Name">
+<input id="ageln" placeholder="Age">
+<br>
+<button onclick="checkEligibility()">
+    Check if eligible
+</button>
+<h4>
+    Eligible: <a id="outEligilbe"> ---</a>
+</h4>
+
+<script>
+    function checkEligibility(){
+        var age=document.getElementById("ageln").value;
+        age = parseInt(age);
+        if(age>=17){
+            document.getElementById("outEligilbe").innerHTML="Yes";
+        }
+        else if(age==16){
+            document.getElementById("outEligilbe").innerHTML="Moped Only";
+        }
+        else{
+            document.getElementById("outEligilbe").innerHTML="No";
+        }
+    }
+</script>
